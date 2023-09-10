@@ -22,6 +22,29 @@ div.board {
 }
 
 div.axe {
-    font-size: 20px;
-    border: 1px solid rgba(0,0,0,0);
+    font-size: 21px;
+    background-color: #f5f5dc;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
+
+div.chessboard {
+    border: 30px solid #45322e;
+    width: 308px;
+}
+
+
+
+img.small-rotate:hover {
+    transform: rotate(9deg);
+}
+
+img.full-rotate {
+    transition-property: all;
+    transition: all ease 2s;
+}
+
+img.full-rotate:hover {
+    transform: rotate(180deg);
+}
+
+

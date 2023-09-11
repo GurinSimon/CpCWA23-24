@@ -1,0 +1,25 @@
+table, td, th {
+  border: 0px;
+  border-collapse: collapse;
+  padding: 0 0 0 0;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 0%;
+}
+
+tr:nth-child(odd) > td:nth-child(odd), tr:nth-child(even) > td:nth-child(even) {
+  background-color: #eeeed2;
+}
+
+tr:nth-child(odd) > td:nth-child(even), tr:nth-child(even) > td:nth-child(odd) {
+  background-color: #769656;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,76 @@
+div.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+div.white {
+    background-color: wheat;
+    font-size: 22px;
+
+}
+
+div.black {
+    background-color: gray;
+    font-size: 22px;
+}
+
+div.figure.black {
+    background: none;
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+div.figure.white {
+    background: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+div.tcell {
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+
+.chess {
+    display: table;
+}
+
+.chess-tr {
+    display: table-row;
+}
+
+.chess-tr div {
+    display: table-cell;
+}

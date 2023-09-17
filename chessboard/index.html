@@ -1,169 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/chessboard.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <title>Шахматная доска</title>
+    <title>Chessboard</title>
+    <style>
+        .chessboard {
+            width: 320px;
+            height: 320px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        .chessboard div {
+            width: 40px;
+            height: 40px;
+        }
+
+        .chessboard .black {
+            background-color: #444;
+        }
+
+        .chessboard .white {
+            background-color: #fff;
+        }
+
+        .piece {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
-
 <body>
-    <main>
-        <div class="chessboard">
-            <div class="header-label">8</div>
-            <div class="white cell">
-                <img src="assets/chess/rook.svg" alt="rook" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/knight.svg" alt="knight" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/bishop.svg" alt="bishop" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/queen.svg" alt="queen" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/king.svg" alt="king" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/bishop.svg" alt="bishop" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/knight.svg" alt="knight" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/rook.svg" alt="rook" class="piece black">
-            </div>
+    <div class="chessboard">
+        <!-- White Pieces -->
+        <div class="black piece">&#9814;</div>
+        <div class="white piece">&#9816;</div>
+        <div class="black piece">&#9815;</div>
+        <div class="white piece">&#9813;</div>
+        <div class="black piece">&#9812;</div>
+        <div class="white piece">&#9815;</div>
+        <div class="black piece">&#9816;</div>
+        <div class="white piece">&#9814;</div>
 
-            <div class="header-label">7</div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece black">
-            </div>
+        <div class="white piece">&#9817;</div>
+        <div class="black piece">&#9817;</div>
+        <div class="white piece">&#9817;</div>
+        <div class="black piece">&#9817;</div>
+        <div class="white piece">&#9817;</div>
+        <div class="black piece">&#9817;</div>
+        <div class="white piece">&#9817;</div>
+        <div class="black piece">&#9817;</div>
 
-            <div class="header-label">6</div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
+        <div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div>
+        <div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div>
+        <div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div>
+        <div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div>
 
-            <div class="header-label">5</div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
+        <div class="black piece">&#9823;</div>
+        <div class="white piece">&#9823;</div>
+        <div class="black piece">&#9823;</div>
+        <div class="white piece">&#9823;</div>
+        <div class="black piece">&#9823;</div>
+        <div class="white piece">&#9823;</div>
+        <div class="black piece">&#9823;</div>
+        <div class="white piece">&#9823;</div>
 
-            <div class="header-label">4</div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-
-            <div class="header-label">3</div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-            <div class="black cell"></div>
-            <div class="white cell"></div>
-
-            <div class="header-label">2</div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/pawn.svg" alt="pawn" class="piece white">
-            </div>
-
-            <div class="header-label">1</div>
-            <div class="black cell">
-                <img src="assets/chess/rook.svg" alt="rook" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/knight.svg" alt="knight" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/bishop.svg" alt="bishop" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/queen.svg" alt="queen" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/king.svg" alt="king" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/bishop.svg" alt="bishop" class="piece white">
-            </div>
-            <div class="black cell">
-                <img src="assets/chess/knight.svg" alt="knight" class="piece white">
-            </div>
-            <div class="white cell">
-                <img src="assets/chess/rook.svg" alt="rook" class="piece white">
-            </div>
-
-            <div class="header-label"></div>
-            <div class="header-label">a</div>
-            <div class="header-label">b</div>
-            <div class="header-label">c</div>
-            <div class="header-label">d</div>
-            <div class="header-label">e</div>
-            <div class="header-label">f</div>
-            <div class="header-label">g</div>
-            <div class="header-label">h</div>
-        </div>
-    </main>
+        <div class="white piece">&#9820;</div>
+        <div class="black piece">&#9822;</div>
+        <div class="white piece">&#9821;</div>
+        <div class="black piece">&#9819;</div>
+        <div class="white piece">&#9818;</div>
+        <div class="black piece">&#9821;</div>
+        <div class="white piece">&#9822;</div>
+        <div class="black piece">&#9820;</div>
+    </div>
 </body>
+</html>

@@ -9,8 +9,12 @@ td {
 
 .dark {
     background: sandybrown;
+    width: 30px;
+    height: 30px;
 }
 
 .light {
     background: bisque;
+    width: 30px;
+    height: 30px;
 }

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board-container {
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell img {
+    width: 25px;
+    height: 25px;
+}
+
+.letter, .number {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.light {
+    background-color: rgb(235, 212, 176);
+}
+
+.dark {
+    background-color: rgb(168, 126, 93);
+}

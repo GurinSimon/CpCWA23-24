@@ -1,0 +1,41 @@
+.chessboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+}
+
+.whitecell {
+    font-size: 72px;
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+    align-items: center;
+}
+
+.whitepiece {
+    color: green;
+    font: bold;
+}
+
+.blackcell {
+    font-size: 72px;
+    background-color: maroon;
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+    align-items: center;
+}
+
+.blackpiece {
+    color: red;
+    font: bold;
+}
+
+body {
+    background-color: antiquewhite;
+}

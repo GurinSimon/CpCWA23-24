@@ -1,0 +1,62 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стили для шахматной доски */
+.chessboard {
+    width: 400px; /* Измените размеры по вашему усмотрению */
+    margin: 50px auto;
+    position: relative;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для координат */
+.coordinates {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+}
+
+.coordinate-x {
+    width: 50px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Стили для черных и белых клеток */
+.white {
+    background-color: #f3e6ab;
+}
+
+.black {
+    background-color: #fdcc45;
+}
+
+/* Стили для фигур */
+.cell img {
+    max-width: 100%;
+    max-height: 100%;
+}

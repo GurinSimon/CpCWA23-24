@@ -1,0 +1,51 @@
+div.cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border:0.01px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+td.white {
+    background: linear-gradient(rebeccapurple, rgb(180, 151, 210));
+    color: green;
+}
+td.black {
+    background: linear-gradient(green, rgb(189, 227, 189));
+    color: rebeccapurple;
+}
+
+div.white{
+    background: white;
+    color: black;
+}
+
+div.black {
+    background-color: black;
+    color: white;
+}
+
+span {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+}
+
+.color-hint {
+    background: linear-gradient(green, 80%, green);
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,23 @@
+.body {
+    color: #eeeeee;
+}
+.box {
+    text-align: center; background-color: #eeeeee;
+    display: inline-block;
+    margin: 0;
+    
+}
+
+.chess {
+    border-spacing: 0; border-collapse: collapse;
+}
+.chess tr td {
+    border: 1px solid; width: 30px; height: 30px; text-align: center; vertical-align: middle; background: #906a4b;
+    font-size: 20px;
+}
+.chess tr:nth-child(odd) td:nth-child(even){
+    background: #f0d9b5;
+}
+.chess tr:nth-child(even) td:nth-child(odd){
+    background: #f0d9b5;
+}   
